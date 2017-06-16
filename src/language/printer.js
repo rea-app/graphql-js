@@ -112,7 +112,7 @@ const printDocASTReducer = {
 
   ScalarTypeDefinition: ({ description, name, directives }) =>
     join(
-      [description, join(['scalar', name, wrap(' = ', type), join(directives, ' ')], ' ')],
+      [description, join(['scalar', name, wrap(' as ', type), join(directives, ' ')], ' ')],
       '\n',
     ),
 
