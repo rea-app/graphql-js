@@ -196,6 +196,8 @@ function graphqlImpl(
     return { errors: validationErrors };
   }
 
+  console.log(operationName);
+
   // Execute
   return execute(
     schema,
